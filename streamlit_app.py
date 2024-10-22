@@ -1,19 +1,29 @@
-# Import necessary libraries
-import ssl
+# 1. IMPORTS ZUERST
+# Basic imports
 import streamlit as st
 import pandas as pd
+import numpy as np
+import base64
+from pathlib import Path
+
+# Visualization
 import plotly.graph_objects as go
 from PIL import Image
-import numpy as np
 import cv2
-from deepface import DeepFace
-from tensorflow.keras.applications import ResNet50
-from tensorflow.keras.applications.resnet50 import preprocess_input
-from tensorflow.keras.preprocessing.image import img_to_array
-import mediapipe as mp
+
+# ML/AI imports
+try:
+    from deepface import DeepFace
+    from tensorflow.keras.applications import ResNet50
+    from tensorflow.keras.preprocessing.image import img_to_array
+    import mediapipe as mp
+except ImportError as e:
+    st.error(f"Error loading ML libraries: {str(e)}")
+
+# System imports
 import time
 import logging
-from typing import Tuple, List, Dict, Any, Optional
+import ssl
 
 # SSL Context Fix
 ssl._create_default_https_context = ssl._create_unverified_context
