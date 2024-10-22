@@ -1,0 +1,17 @@
+name: woodvision
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - streamlit>=1.31.1
+  - pandas>=2.2.0
+  - plotly>=5.18.0
+  - pillow>=10.2.0
+  - numpy>=1.26.3
+  - opencv>=4.8.0
+  - tensorflow>=2.6.0
+  - mediapipe>=0.10.9
+  - pip
+  - pip:
+    - deepface>=0.0.79
