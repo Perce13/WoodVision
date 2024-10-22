@@ -3,7 +3,7 @@ pandas
 plotly
 Pillow
 numpy
-opencv-python
+opencv-python-headless
 deepface
-tensorflow>=2.16.1
+tensorflow-cpu
 mediapipe
