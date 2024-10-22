@@ -1,9 +1,12 @@
 streamlit
 pandas
-plotly
 numpy
+plotly
 Pillow
 opencv-python-headless
 deepface
 tensorflow-cpu
+tensorflow-hub
+keras
+keras-applications
 mediapipe
