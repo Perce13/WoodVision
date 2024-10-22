@@ -1,9 +1,16 @@
 streamlit
+numpy
 pandas
 plotly
 Pillow
-numpy
 opencv-python-headless
+mediapipe
 deepface
 tensorflow-cpu
-mediapipe
+
+# System dependencies (packages.txt)
+# libgl1-mesa-glx
+# libglib2.0-0
+# libsm6
+# libxrender1
+# libfontconfig1
