@@ -1,40 +1,28 @@
-# 1. IMPORTS ZUERST
-# Basic imports
-import streamlit as st
-import pandas as pd
-import numpy as np
-import base64
-from pathlib import Path
-
-# Visualization
-import plotly.graph_objects as go
-from PIL import Image
-import cv2
-
-# ML/AI imports
-try:
-    from deepface import DeepFace
-    from tensorflow.keras.applications import ResNet50
-    from tensorflow.keras.preprocessing.image import img_to_array
-    import mediapipe as mp
-except ImportError as e:
-    st.error(f"Error loading ML libraries: {str(e)}")
-
-# System imports
-import time
-import logging
 import ssl
-
-# SSL Context Fix
 ssl._create_default_https_context = ssl._create_unverified_context
 
-# Logging setup
+import logging
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     filename='app_debug.log'
 )
 logger = logging.getLogger(__name__)
+
+# Basic imports
+import streamlit as st
+import pandas as pd
+import numpy as np
+import base64
+from pathlib import Path
+import plotly.graph_objects as go
+from PIL import Image
+import cv2
+from deepface import DeepFace
+from tensorflow.keras.applications import ResNet50
+from tensorflow.keras.preprocessing.image import img_to_array
+import mediapipe as mp
+import time
 
 @st.cache_data
 def load_data() -> pd.DataFrame:
