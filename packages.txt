@@ -4,3 +4,8 @@ libpng-dev
 libfreetype6-dev
 libtiff5-dev
 libwebp-dev
+libsm6
+libxext6
+libxrender1
+libfontconfig1
+libice6
