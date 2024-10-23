@@ -1,5 +1,6 @@
-libgl1-mesa-glx
-libglib2.0-0
-libsm6
-libxrender1
-libfontconfig1
+libjpeg-dev
+zlib1g-dev
+libpng-dev
+libfreetype6-dev
+libtiff5-dev
+libwebp-dev
